@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin — Cata Ofertas</title>
+  <meta name="description" content="Cata Ofertas cuida de todo o processo de venda do seu produto: fotografia, anúncio, divulgação e negociação.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Cata Ofertas"><span style="margin-left:10px;color:#9ca3af;font-weight:600">Admin</span></a>
+      <nav><a href="index.html">Site</a><a href="parcerias.html">Parcerias</a><a class="btn sec pequeno" href="login.html">👤 Entrar</a></nav>
+    </div>
+  </header>
+
+  <section class="pagina-topo">
+    <div class="container">
+      <div class="titulo-secao"><span>Área restrita</span><h2>Painel administrativo</h2></div>
+
+      <div id="telaLogin" class="caixa" style="max-width:380px">
+        <h3>Acesso administrativo</h3>
+        <div class="copiar">
+          <input type="password" id="senha" placeholder="Senha">
+          <button class="btn" id="btnEntrar">Entrar</button>
+        </div>
+      </div>
+
+      <div id="telaAdmin" class="oculto">
+        <div class="aviso">⚠️ Versão de demonstração: os dados ficam salvos só neste navegador e a senha é verificada no próprio site. Para uso real, é preciso um backend com login de verdade.</div>
+
+        <div class="painel-grid">
+          <div class="kpi"><span>Pedidos de venda</span><strong id="kVendas">0</strong></div>
+          <div class="kpi"><span>Interesses de compra</span><strong id="kInteresses">0</strong></div>
+          <div class="kpi"><span>Volume vendido</span><strong id="kVolume">R$ 0,00</strong></div>
+          <div class="kpi"><span>Comissões a pagar</span><strong id="kPagar">R$ 0,00</strong></div>
+          <div class="kpi"><span>Parceiras</span><strong id="kParc">0</strong></div>
+        </div>
+
+        <div class="caixa">
+          <h3>Pedidos de venda (quem quer vender)</h3>
+          <div class="tabela-scroll">
+            <table>
+              <thead><tr><th>Protocolo</th><th>Vendedor</th><th>Produto</th><th>Valor</th><th>Parceira</th><th>Comissão</th><th>Andamento</th><th>Pagamento</th></tr></thead>
+              <tbody id="tbVendas"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="caixa">
+          <h3>Interesses de compra (quem quer comprar)</h3>
+          <div class="tabela-scroll">
+            <table>
+              <thead><tr><th>Protocolo</th><th>Comprador</th><th>Produto</th><th>Valor</th><th>Parceira</th><th>Comissão</th><th>Andamento</th><th>Pagamento</th></tr></thead>
+              <tbody id="tbInteresses"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="caixa">
+          <h3>Parceiras</h3>
+          <div class="tabela-scroll">
+            <table>
+              <thead><tr><th>Código</th><th>Nome</th><th>WhatsApp</th><th>Cidade</th><th>Pix</th><th>A pagar</th></tr></thead>
+              <tbody id="tbParceiras"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="store.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
