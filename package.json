@@ -1,0 +1,17 @@
+{
+  "name": "cata-ofertas",
+  "version": "1.0.0",
+  "description": "Cata Ofertas - site + back-end (Node, Express, PostgreSQL)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0"
+  }
+}

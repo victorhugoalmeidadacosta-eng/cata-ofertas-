@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel da parceira — Cata Ofertas</title>
+  <meta name="description" content="Cata Ofertas cuida de todo o processo de venda do seu produto: fotografia, anúncio, divulgação e negociação.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Cata Ofertas"></a>
+      <nav>
+        <a class="extra" href="index.html#como">Como funciona</a>
+        <a class="extra" href="index.html#catalogo">Produtos</a>
+        <a class="extra" href="parcerias.html">Parcerias</a>
+        <a class="btn sec pequeno" id="linkEntrar" href="login.html">👤 Entrar</a>
+        <a class="btn" href="vender.html">Quero vender</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pagina-topo">
+    <div class="container" style="max-width:780px">
+      <div class="titulo-secao"><span>Programa de parcerias</span><h2>Painel da parceira</h2></div>
+
+      <!-- Entrada / cadastro -->
+      <div id="telaEntrada">
+        <div class="caixa">
+          <h3>Já sou parceira</h3>
+          <div class="copiar">
+            <input id="codigoLogin" placeholder="Seu código (ex.: MARIA123)">
+            <button class="btn" id="btnEntrar">Entrar</button>
+          </div>
+        </div>
+
+        <div class="caixa">
+          <h3>Quero ser parceira</h3>
+          <p style="color:var(--muted);margin-bottom:12px">Receba um link exclusivo e ganhe <strong id="txtComissao" style="color:var(--green)"></strong> de comissão sobre cada venda concluída das pessoas que você indicar. <a href="parcerias.html" style="color:var(--red);font-weight:700">Saiba mais →</a></p>
+          <form id="formCadastro" class="form-grid">
+            <label class="campo">Nome <input name="nome" required></label>
+            <div class="linha2">
+              <label class="campo">WhatsApp <input name="whatsapp" required inputmode="tel"></label>
+              <label class="campo">Cidade <input name="cidade" required></label>
+            </div>
+            <label class="campo">Chave Pix (para receber comissões) <input name="pix" required></label>
+            <button class="btn" type="submit">Criar meu link</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Painel -->
+      <div id="telaPainel" class="oculto">
+        <div class="caixa">
+          <h3 id="boasVindas"></h3>
+          <p style="color:var(--muted);margin:6px 0 12px">Compartilhe seu link com quem quer vender ou comprar. Toda indicação feita por ele dentro de <span id="diasValidade"></span> dias conta para você.</p>
+          <div class="copiar">
+            <input id="meuLink" readonly>
+            <button class="btn" id="btnCopiar">Copiar</button>
+          </div>
+          <p style="margin-top:8px;font-size:.85rem;color:var(--muted)">Seu código: <strong id="meuCodigo" style="color:var(--text)"></strong> (a pessoa também pode digitá-lo no formulário)</p>
+        </div>
+
+        <div class="caixa">
+          <div class="painel-grid">
+            <div class="kpi"><span>Indicações</span><strong id="kIndicacoes">0</strong></div>
+            <div class="kpi"><span>Comissão a receber</span><strong id="kPendente">R$ 0,00</strong></div>
+            <div class="kpi"><span>Comissão já paga</span><strong id="kPaga">R$ 0,00</strong></div>
+          </div>
+          <div class="tabela-scroll">
+            <table>
+              <thead><tr><th>Indicação</th><th>Produto</th><th>Valor</th><th>Comissão</th><th>Andamento</th></tr></thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+          <p style="margin-top:10px;font-size:.82rem;color:var(--muted)">A comissão só é contada quando a venda está <em>vendido</em>.</p>
+        </div>
+
+        <button class="btn sec" id="btnSair" style="margin-top:16px">Sair</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="store.js"></script>
+  <script src="parceira.js"></script>
+</body>
+</html>

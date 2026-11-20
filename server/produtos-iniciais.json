@@ -1,0 +1,92 @@
+[
+  {
+    "nome": "Máquina de lavar Samsung",
+    "categoria": "Eletrodomésticos",
+    "preco": 1140,
+    "estado": "Seminovo",
+    "foto": "images/ofertas/maquina-lavar.jpg",
+    "status": "vendido",
+    "descricao": "Máquina de lavar roupa de abertura frontal, na cor branca."
+  },
+  {
+    "nome": "Sofá de canto",
+    "categoria": "Casa e móveis",
+    "preco": 1500,
+    "estado": "Usado",
+    "foto": "images/ofertas/sofa-canto.jpg",
+    "status": "disponivel",
+    "descricao": "Sofá de canto em tecido bege."
+  },
+  {
+    "nome": "Mesa de sinuca",
+    "categoria": "Lazer e viagem",
+    "preco": 250,
+    "estado": "Seminovo",
+    "foto": "images/ofertas/mesa-sinuca.jpg",
+    "status": "disponivel",
+    "descricao": "Mesa de sinuca compacta com pés de madeira, tacos e bolas."
+  },
+  {
+    "nome": "Conjunto de malas de viagem",
+    "categoria": "Lazer e viagem",
+    "preco": 420,
+    "estado": "Seminovo",
+    "foto": "images/ofertas/malas-viagem.jpg",
+    "status": "reservado",
+    "descricao": "Duas malas rígidas com rodinhas e alça retrátil, cor champanhe."
+  },
+  {
+    "nome": "Xbox One com Kinect e controle",
+    "categoria": "Eletrônicos e games",
+    "preco": 640,
+    "estado": "Usado",
+    "foto": "images/ofertas/xbox-one.jpg",
+    "status": "disponivel",
+    "descricao": "Console Xbox One com sensor Kinect e controle."
+  },
+  {
+    "nome": "Fogão 4 bocas retrô amarelo",
+    "categoria": "Eletrodomésticos",
+    "preco": 500,
+    "estado": "Seminovo",
+    "foto": "images/ofertas/fogao-retro.jpg",
+    "status": "vendido",
+    "descricao": "Fogão de 4 bocas com forno e abas laterais, na cor amarela."
+  },
+  {
+    "nome": "Setup gamer: monitor curvo, teclado e mouse",
+    "categoria": "Eletrônicos e games",
+    "preco": 2200,
+    "estado": "Seminovo",
+    "foto": "images/ofertas/setup-gamer.jpg",
+    "status": "disponivel",
+    "descricao": "Monitor curvo, teclado mecânico, mouse, mousepad grande e caixa de som."
+  },
+  {
+    "nome": "Moto vermelha",
+    "categoria": "Veículos",
+    "preco": 12500,
+    "estado": "Usado",
+    "foto": "images/ofertas/moto-vermelha.jpg",
+    "status": "disponivel",
+    "descricao": "Moto vermelha com detalhes em azul. Fale com a gente para ver documentação e quilometragem."
+  },
+  {
+    "nome": "Trompete com estojo",
+    "categoria": "Instrumentos musicais",
+    "preco": 1200,
+    "estado": "Usado",
+    "foto": "images/ofertas/trompete.jpg",
+    "status": "disponivel",
+    "descricao": "Trompete dourado com estojo."
+  },
+  {
+    "nome": "Smartphone com capinha",
+    "categoria": "Eletrônicos e games",
+    "preco": 1200,
+    "estado": "Seminovo",
+    "foto": "images/ofertas/smartphone.jpg",
+    "status": "reservado",
+    "descricao": "Smartphone com capinha branca."
+  }
+]

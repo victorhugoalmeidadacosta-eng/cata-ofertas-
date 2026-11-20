@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cata Ofertas — Nós vendemos o seu produto por você</title>
+  <meta name="description" content="Cata Ofertas cuida de todo o processo de venda do seu produto: fotografia, anúncio, divulgação e negociação.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="faixa-indicacao" id="faixaIndicacao"></div>
+
+  <header class="topo">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Cata Ofertas"></a>
+      <nav>
+        <a class="extra" href="index.html#como">Como funciona</a>
+        <a class="extra" href="index.html#catalogo">Produtos</a>
+        <a class="extra" href="parcerias.html">Parcerias</a>
+        <a class="btn sec pequeno" id="linkEntrar" href="login.html">👤 Entrar</a>
+        <a class="btn" href="vender.html">Quero vender</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Carrossel (slides editáveis em data.js > SLIDES) -->
+  <section class="carrossel-secao">
+    <div class="container">
+      <div class="carrossel" id="carrossel" aria-roledescription="carrossel">
+        <div class="trilho" id="trilho"></div>
+        <button class="seta esq" id="setaEsq" aria-label="Slide anterior">‹</button>
+        <button class="seta dir" id="setaDir" aria-label="Próximo slide">›</button>
+        <div class="pontos" id="pontos"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="beneficios">
+    <div class="container">
+      <div class="grade-b">
+        <div class="beneficio"><div class="ico">⚡</div><div><strong>Prático</strong><small>Você só envia os dados do produto</small></div></div>
+        <div class="beneficio"><div class="ico">💸</div><div><strong>Acessível</strong><small>Uma solução que cabe no seu bolso</small></div></div>
+        <div class="beneficio"><div class="ico">🔁</div><div><strong>Do início ao fim</strong><small>Cuidamos de todas as etapas</small></div></div>
+        <div class="beneficio"><div class="ico">🤝</div><div><strong>Negociação por nossa conta</strong><small>Você não precisa falar com curiosos</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-texto">
+          <div class="titulo-secao"><span>Quem somos</span><h2>Vender não precisa ser trabalhoso</h2></div>
+          <p>A <strong>Cata Ofertas</strong> surge com o objetivo de facilitar a vida de pessoas que possuem produtos para vender, mas não têm tempo, conhecimento ou disposição para realizar todo o processo de venda.</p>
+          <p>Nossa empresa oferece uma solução <strong>prática e acessível</strong>, cuidando de todas as etapas, desde a <strong>fotografia do produto</strong> e a <strong>criação de anúncios atrativos</strong> até a <strong>divulgação</strong> e a <strong>negociação com possíveis compradores</strong>.</p>
+          <div class="acoes" style="margin-top:18px">
+            <a class="btn" href="vender.html">Quero vender meu produto</a>
+            <a class="btn sec" href="#catalogo">Ver produtos à venda</a>
+          </div>
+        </div>
+        <div class="dores">
+          <div class="dor"><strong>Não tem tempo?</strong><span>A gente cuida do trabalho ✓</span></div>
+          <div class="dor"><strong>Não tem conhecimento?</strong><span>A gente monta o anúncio ✓</span></div>
+          <div class="dor"><strong>Não tem disposição?</strong><span>A gente negocia por você ✓</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="apresentacao">
+    <div class="container">
+      <div class="video-bloco">
+        <div class="video-texto">
+          <div class="titulo-secao"><span>Veja na prática</span><h2>Da fotografia ao anúncio pronto</h2></div>
+          <p>Assista como a Cata Ofertas cuida do seu produto: nós fotografamos, montamos o anúncio e colocamos tudo pronto para os compradores.</p>
+          <a class="btn" href="vender.html">Quero vender meu produto</a>
+        </div>
+        <div class="video-caixa">
+          <video id="video" muted loop playsinline preload="metadata" poster="videos/capa.jpg" disablepictureinpicture aria-label="Apresentação da Cata Ofertas (vídeo sem som)">
+            <source src="videos/apresentacao.mp4" type="video/mp4">
+          </video>
+          <button class="video-btn" id="videoBtn" type="button" aria-label="Pausar ou reproduzir o vídeo">⏸</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como">
+    <div class="container">
+      <div class="titulo-secao"><span>Passo a passo</span><h2>Como funciona</h2></div>
+      <div class="como cinco">
+        <div class="passo"><div class="num">01</div><strong>Você envia o produto</strong><p>Preencha um formulário rápido com as informações do que quer vender.</p></div>
+        <div class="passo"><div class="num">02</div><strong>Fotografamos</strong><p>Fazemos a fotografia do produto para ele aparecer bem.</p></div>
+        <div class="passo"><div class="num">03</div><strong>Criamos o anúncio</strong><p>Montamos um anúncio atrativo para chamar a atenção dos compradores.</p></div>
+        <div class="passo"><div class="num">04</div><strong>Divulgamos</strong><p>Colocamos o seu produto na frente de quem pode comprar.</p></div>
+        <div class="passo"><div class="num">05</div><strong>Negociamos</strong><p>Conversamos com os possíveis compradores e conduzimos a negociação.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogo">
+    <div class="container">
+      <div class="titulo-secao"><span>Produtos à venda</span><h2>Ofertas anunciadas</h2></div>
+      <div class="filtros">
+        <input type="search" id="busca" placeholder="🔍  Buscar produto...">
+        <div class="chips" id="chips"></div>
+      </div>
+      <div class="grade" id="grade"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-parceira cta-vender">
+        <div>
+          <h2>Tem algo para vender? <em>Deixa com a gente</em></h2>
+          <p>Você envia as informações e nós fazemos o resto: fotografia, anúncio, divulgação e negociação.</p>
+        </div>
+        <a class="btn" href="vender.html">Quero vender →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="container">
+      <div class="cta-parceira">
+        <div>
+          <h2>Indique e ganhe <em><span id="txtComissao"></span></em> em cada venda concluída</h2>
+          <p>Seja parceira da Cata Ofertas: receba seu link exclusivo e acompanhe suas comissões em um painel só seu.</p>
+        </div>
+        <a class="btn verde" href="parcerias.html">Quero ser parceira →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="container">
+      <img src="images/logo.png" alt="Cata Ofertas">
+      <div class="rodape-links">
+        <a href="vender.html">Quero vender</a>
+        <a href="index.html#catalogo">Produtos</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="login.html">Login do cliente</a>
+        <a href="parceira.html">Área da parceira</a>
+        <a href="admin.html">Login admin</a>
+        <a class="link-whats" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <small>© <span id="ano"></span> Cata Ofertas. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+  <a class="whats-flutuante link-whats" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">💬 <span>Fale conosco</span></a>
+
+  <!-- Gaveta: Tenho interesse -->
+  <div class="fundo-escuro" id="fundo"></div>
+  <aside class="gaveta" id="gaveta" aria-label="Tenho interesse">
+    <header>
+      <strong>Tenho interesse</strong>
+      <button class="btn sec pequeno" id="fechar">Fechar ✕</button>
+    </header>
+    <div class="corpo">
+      <div class="item-carrinho" id="resumo"></div>
+      <p style="color:var(--muted);font-size:.85rem">Deixe seus dados e nossa equipe fala com você pelo WhatsApp. A negociação é feita pela Cata Ofertas.</p>
+      <label class="campo">Seu nome <input id="nome" placeholder="Nome completo"></label>
+      <label class="campo">WhatsApp <input id="whats" placeholder="(11) 99999-9999" inputmode="tel"></label>
+      <label class="campo">Observação (opcional) <textarea id="obs" placeholder="Ex.: queria negociar o valor, ver mais fotos..."></textarea></label>
+      <label class="campo">Código da parceira (opcional) <input id="codigo" placeholder="Ex.: MARIA123"></label>
+      <button class="btn verde" id="enviarInteresse">Enviar pelo WhatsApp</button>
+    </div>
+  </aside>
+
+  <script src="data.js"></script>
+  <script src="store.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

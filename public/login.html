@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login do cliente — Cata Ofertas</title>
+  <meta name="description" content="Cata Ofertas cuida de todo o processo de venda do seu produto: fotografia, anúncio, divulgação e negociação.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Cata Ofertas"></a>
+      <nav>
+        <a class="extra" href="index.html#como">Como funciona</a>
+        <a class="extra" href="index.html#catalogo">Produtos</a>
+        <a class="extra" href="parcerias.html">Parcerias</a>
+        <a class="btn sec pequeno" id="linkEntrar" href="login.html">👤 Entrar</a>
+        <a class="btn" href="vender.html">Quero vender</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pagina-topo">
+    <div class="container" style="max-width:760px">
+      <div class="titulo-secao"><span>Área do cliente</span><h2>Minha conta</h2></div>
+
+      <div id="telaAuth" class="caixa" style="max-width:520px">
+        <div class="abas">
+          <button class="aba ativa" data-aba="entrar" type="button">Entrar</button>
+          <button class="aba" data-aba="criar" type="button">Criar conta</button>
+        </div>
+
+        <form id="formEntrar" class="form-grid">
+          <label class="campo">WhatsApp <input name="whatsapp" placeholder="(11) 99999-9999" inputmode="tel" required autocomplete="username"></label>
+          <label class="campo">Senha <input name="senha" type="password" required autocomplete="current-password"></label>
+          <div class="msg-erro" id="erroEntrar"></div>
+          <button class="btn" type="submit">Entrar</button>
+        </form>
+
+        <form id="formCriar" class="form-grid oculto">
+          <label class="campo">Nome <input name="nome" required autocomplete="name"></label>
+          <label class="campo">WhatsApp <input name="whatsapp" placeholder="(11) 99999-9999" inputmode="tel" required autocomplete="username"></label>
+          <label class="campo">Senha (mín. 4 caracteres) <input name="senha" type="password" minlength="4" required autocomplete="new-password"></label>
+          <div class="msg-erro" id="erroCriar"></div>
+          <button class="btn" type="submit">Criar minha conta</button>
+        </form>
+
+        <div class="links-auth">
+          <span>É parceira? <a href="parceira.html">Entrar na área da parceira →</a></span>
+          <span>É administrador? <a href="admin.html">Entrar no painel admin →</a></span>
+        </div>
+      </div>
+
+      <div id="telaConta" class="oculto">
+        <div class="caixa">
+          <h3 id="boasVindas"></h3>
+          <p style="color:var(--muted);margin:4px 0 14px;font-size:.9rem">Acompanhe aqui o andamento dos seus pedidos de venda e dos seus interesses de compra.</p>
+          <div class="acoes">
+            <a class="btn" href="vender.html">Quero vender um produto</a>
+            <a class="btn sec" href="index.html#catalogo">Ver produtos</a>
+            <button class="btn sec" id="btnSair" type="button">Sair</button>
+          </div>
+        </div>
+        <div class="caixa">
+          <h3>Meus pedidos de venda</h3>
+          <div class="tabela-scroll">
+            <table>
+              <thead><tr><th>Protocolo</th><th>Produto</th><th>Preço desejado</th><th>Andamento</th></tr></thead>
+              <tbody id="tbVendas"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="caixa">
+          <h3>Meus interesses de compra</h3>
+          <div class="tabela-scroll">
+            <table>
+              <thead><tr><th>Protocolo</th><th>Produto</th><th>Valor</th><th>Andamento</th></tr></thead>
+              <tbody id="tbCompras"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="aviso" style="margin-top:16px">Versão de demonstração: sua conta fica salva só neste navegador.</div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="container">
+      <img src="images/logo.png" alt="Cata Ofertas">
+      <div class="rodape-links">
+        <a href="vender.html">Quero vender</a>
+        <a href="index.html#catalogo">Produtos</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="login.html">Login do cliente</a>
+        <a href="parceira.html">Área da parceira</a>
+        <a href="admin.html">Login admin</a>
+        <a class="link-whats" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <small>© <span id="ano"></span> Cata Ofertas. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="store.js"></script>
+  <script src="login.js"></script>
+  <script>
+    document.getElementById("ano").textContent = new Date().getFullYear();
+    document.querySelectorAll(".link-whats").forEach(a => {
+      a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent("Olá! Vim pelo site da Cata Ofertas.");
+    });
+  </script>
+</body>
+</html>

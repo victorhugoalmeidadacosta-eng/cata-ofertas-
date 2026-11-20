@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parcerias — Cata Ofertas</title>
+  <meta name="description" content="Indique quem quer vender ou comprar e ganhe comissão em cada venda concluída.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="images/logo.png" alt="Cata Ofertas"></a>
+      <nav>
+        <a class="extra" href="index.html#como">Como funciona</a>
+        <a class="extra" href="index.html#catalogo">Produtos</a>
+        <a class="extra" href="parcerias.html">Parcerias</a>
+        <a class="btn sec pequeno" id="linkEntrar" href="login.html">👤 Entrar</a>
+        <a class="btn" href="vender.html">Quero vender</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="pagina-hero">
+    <div class="container">
+      <div class="titulo-secao"><span>Programa de parcerias</span></div>
+      <h1>Indique a <em>Cata Ofertas</em> e ganhe comissão em cada venda</h1>
+      <p>Conhece alguém que tem produto parado e não tem tempo para vender? Ou quem procura uma boa oferta? Indique com seu link exclusivo e ganhe quando a venda for concluída.</p>
+      <div class="acoes">
+        <a class="btn verde" href="parceira.html">Quero ser parceira →</a>
+        <a class="btn sec" href="parceira.html">Já sou parceira</a>
+      </div>
+      <div class="numeros">
+        <div class="numero"><strong><span id="nComissao"></span></strong><span>de comissão sobre o valor da venda concluída</span></div>
+        <div class="numero"><strong><span id="nDias"></span> dias</strong><span>de validade para cada indicação</span></div>
+        <div class="numero"><strong>Pix</strong><span>para receber suas comissões</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="titulo-secao"><span>Passo a passo</span><h2>Como funciona para parceiras</h2></div>
+      <div class="como">
+        <div class="passo"><div class="num">01</div><strong>Cadastre-se</strong><p>Informe seus dados e sua chave Pix. Você recebe um código e um link só seus.</p></div>
+        <div class="passo"><div class="num">02</div><strong>Compartilhe</strong><p>Envie seu link para quem quer vender ou comprar, ou peça para digitarem seu código.</p></div>
+        <div class="passo"><div class="num">03</div><strong>A gente atende</strong><p>A Cata Ofertas cuida de todo o processo, e a indicação fica registrada com o seu código.</p></div>
+        <div class="passo"><div class="num">04</div><strong>Receba</strong><p>Com a venda concluída, a comissão aparece no seu painel e é paga via Pix.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="exemplo">
+        <div>
+          <div class="titulo-secao" style="margin-bottom:8px"><span>Exemplo</span></div>
+          <p>Uma pessoa indicada por você vende um produto pela Cata Ofertas por <strong id="exTotal"></strong>. Quando a venda é concluída, sua comissão é de:</p>
+        </div>
+        <strong class="valor" id="exComissao"></strong>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width:820px">
+      <div class="titulo-secao"><span>Dúvidas</span><h2>Perguntas frequentes</h2></div>
+      <div class="faq">
+        <details><summary>Quanto eu ganho por indicação?</summary><p>Você recebe <span class="txtComissao"></span> do valor da venda concluída de cada pessoa que você indicou.</p></details>
+        <details><summary>Quando a comissão é contada?</summary><p>Quando a venda é marcada como <strong>vendido</strong>. Indicações em andamento ou canceladas não entram no valor a receber.</p></details>
+        <details><summary>Por quanto tempo a indicação vale?</summary><p>A indicação feita pelo seu link fica registrada por <span class="txtDias"></span> dias.</p></details>
+        <details><summary>E se a pessoa não usar o link?</summary><p>Sem problema: ela pode digitar o seu código no campo "Código da parceira" ao enviar o produto para vender ou ao demonstrar interesse em uma compra.</p></details>
+        <details><summary>Como recebo?</summary><p>O pagamento é feito via Pix, na chave que você informar no cadastro. Você acompanha o que já foi pago e o que ainda está a receber no seu painel.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta-parceira">
+        <div>
+          <h2>Pronta para <em>começar</em>?</h2>
+          <p>Leva menos de um minuto para criar seu link exclusivo.</p>
+        </div>
+        <a class="btn verde" href="parceira.html">Criar meu link →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="container">
+      <img src="images/logo.png" alt="Cata Ofertas">
+      <div class="rodape-links">
+        <a href="vender.html">Quero vender</a>
+        <a href="index.html#catalogo">Produtos</a>
+        <a href="parcerias.html">Parcerias</a>
+        <a href="login.html">Login do cliente</a>
+        <a href="parceira.html">Área da parceira</a>
+        <a href="admin.html">Login admin</a>
+        <a class="link-whats" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <small>© <span id="ano"></span> Cata Ofertas. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+  <a class="whats-flutuante link-whats" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">💬 <span>Fale conosco</span></a>
+
+  <script src="data.js"></script>
+  <script src="store.js"></script>
+  <script>
+    const pct = CONFIG.comissaoPercentual;
+    const total = 1000;
+    document.getElementById("nComissao").textContent = pct + "%";
+    document.getElementById("nDias").textContent = CONFIG.diasValidadeIndicacao;
+    document.querySelectorAll(".txtComissao").forEach(e => e.textContent = pct + "%");
+    document.querySelectorAll(".txtDias").forEach(e => e.textContent = CONFIG.diasValidadeIndicacao);
+    document.getElementById("exTotal").textContent = brl(total);
+    document.getElementById("exComissao").textContent = brl(Store.calcularComissao(total));
+    document.getElementById("ano").textContent = new Date().getFullYear();
+    document.querySelectorAll(".link-whats").forEach(a => {
+      a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent("Olá! Vim pelo site da Cata Ofertas.");
+    });
+    const cli = Store.clienteAtual();
+    if (cli) document.getElementById("linkEntrar").textContent = "👤 " + cli.nome.split(" ")[0];
+  </script>
+</body>
+</html>
